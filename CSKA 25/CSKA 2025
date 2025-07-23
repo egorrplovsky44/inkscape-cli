@@ -1,0 +1,35 @@
+```xml
+<svg width="1200" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Home kit -->
+  <g id="home" transform="translate(0,0)">
+    <path d="M200,50 L400,50 L450,200 L400,550 L200,550 L150,200 Z" fill="#C3102E" stroke="#002266" stroke-width="10"/>
+    <path d="M200,50 L250,150 L350,150 L400,50 Z" fill="#002266"/>
+    <text x="275" y="450" font-family="Arial" font-size="72" fill="#FFFFFF">VTB</text>
+    <text x="260" y="100" font-family="Arial" font-size="48" fill="#FFFFFF">CSKA</text>
+  </g>
+  <!-- Away kit -->
+  <g id="away" transform="translate(400,0)">
+    <path d="M200,50 L400,50 L450,200 L400,550 L200,550 L150,200 Z" fill="#FFFFFF" stroke="#C3102E" stroke-width="10"/>
+    <pattern id="stripes" patternUnits="userSpaceOnUse" width="60" height="60">
+      <rect width="60" height="20" fill="#C3102E"/>
+      <rect y="20" width="60" height="20" fill="#002266"/>
+      <rect y="40" width="60" height="20" fill="#FFFFFF"/>
+    </pattern>
+    <path d="M200,50 L400,50 L450,200 L400,550 L200,550 L150,200 Z" fill="url(#stripes)"/>
+    <text x="275" y="450" font-family="Arial" font-size="72" fill="#002266">VTB</text>
+    <text x="260" y="100" font-family="Arial" font-size="48" fill="#002266">CSKA</text>
+  </g>
+  <!-- Third kit -->
+  <g id="third" transform="translate(800,0)">
+    <defs>
+      <linearGradient id="grad3" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" style="stop-color:#001F3D;stop-opacity:1"/>
+        <stop offset="100%" style="stop-color:#3B0918;stop-opacity:1"/>
+      </linearGradient>
+    </defs>
+    <path d="M200,50 L400,50 L450,200 L400,550 L200,550 L150,200 Z" fill="url(#grad3)" stroke="#3B0918" stroke-width="10"/>
+    <text x="275" y="450" font-family="Arial" font-size="72" fill="#FFFFFF">VTB</text>
+    <text x="260" y="100" font-family="Arial" font-size="48" fill="#FFFFFF">CSKA</text>
+  </g>
+</svg>
+```
